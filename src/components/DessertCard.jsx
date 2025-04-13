@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react'
+import { useMediaQuery } from 'react-responsive'
 
 import { DefaultButton } from '../styled-components/Button'
 import { DessertContext } from '../../context/DessertContext.jsx'
@@ -14,6 +15,11 @@ const DessertCard = React.memo(({ image: { desktop, thumbnail, mobile, tablet },
   const [ buttonClicked, setButtonClicked ] = useState(false)
 
   const dollarAmount = typeof price === 'number' ? price.toFixed(2) : '0.00';
+
+  const isTablet = useMediaQuery({ query: '(max-width: 768px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 480px)' });
+
+  const currentImage = isMobile ? mobile : isTablet ? tablet : desktop;
 
   const handleAddToCart = () => {
     addToCart({id, name, category, price, image:{desktop, thumbnail, mobile, tablet}});
@@ -36,7 +42,7 @@ const DessertCard = React.memo(({ image: { desktop, thumbnail, mobile, tablet },
         <div className="image-container flex flex-col items-center justify-center mb-[16px]">
             <img 
               className='rounded-lg relative z-[-10] shadow-md'
-              src={desktop} alt="card image" />
+              src={currentImage} alt="card image" />
             {buttonClicked && cartCount > 0 ? (
               <ActiveButton
               cartCount={cartCount}
