@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+:root {
+  /* COLORS */
+
+  --primary-red: #C73B0F;
+
+  --primary-rose-900: #260F08;
+  --primary-rose-500: #87635A;
+  --primary-rose-400: #AD8A85;
+  --primary-rose-300: #CAAFA7;
+  --primary-rose-100: #F5EEEC;
+  --primary-rose-50: #FCF8F6;
+
+  --primary-green: #1EA575;
+
+  --primary-black: #000000;
+  --primary-white: #FFFFFF;
+
+
+  /* FONTS */
+
+  .text-preset-1 {
+    font-family: 'Red Hat Text', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: 0px;
+  }
+
+  .text-preset-2 {
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 700; 
+    font-size: 24px;
+    line-height: 125%;
+    letter-spacing: 0px;
+  }
+
+  .text-preset-3 {
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 600; 
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+  }
+
+  .text-preset-4 {
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 400; 
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+  }
+
+  .text-preset-4-bold {
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 600; 
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+  }
+
+  /* SPACING */
+  .spacing-50 {
+    margin: 4px;
+  }
+  .spacing-100 {
+    margin: 8px;
+  }
+  .spacing-150 {
+    margin: 12px;
+  }
+  .spacing-200 {
+    margin: 16px;
+  }
+  .spacing-300 {
+    margin: 24px;
+  }
+  .spacing-400 {
+    margin: 32px;
+  }
+  .spacing-500 {
+    margin: 40px;
+  }
+  .spacing-1100 {
+    padding: 88px;
+  }
+
+}
