@@ -1,6 +1,8 @@
 import React, { useContext } from 'react'
 import { DessertContext } from '../../context/DessertContext'
 
+import {emptyCartImage} from '../assets/icon-add-to-cart.svg'
+
 import CartItem from './CartItem'
 import CartOrder from './CartOrder'
 
@@ -19,8 +21,7 @@ const CartContent = () => {
           <div className='flex flex-col item-center justify-center text-center'>
             <img 
             className='w-full h-auto mt-[24px] mb-[16px]'
-            src="../../public/assets/images/illustration-empty-cart.svg" 
-            alt="empty cart illustration"/>
+            src={emptyCartImage}/>
             <p className='text-preset-4-bold text-[var(--primary-rose-500)]'>Your added items will appear here</p>
           </div>
         ): (
