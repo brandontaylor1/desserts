@@ -13,7 +13,7 @@ const CartContent = () => {
     <>
       <div className='w-[384px] h-[auto] p-3 sticky top-0 bg-[var(--primary-white)] '>
         <div className='flex flex-row items-center justify-between'>
-          <h1 className='text-preset-2 text-left text-[var(--primary-red)]mb-[24px]'>Your Cart ({cartItems.length})</h1>
+          <h1 className='text-preset-2 text-left text-[var(--primary-red)] mb-[24px]'>Your Cart ({cartItems.length})</h1>
           <p className='text-xs font-bold'>{cartItems > 0 ? "CLEAR ALL" : " "}</p>
         </div>
 
